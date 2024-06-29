@@ -11,11 +11,6 @@ class AopController(
 
     @GetMapping("/aop")
     suspend fun aop(): String {
-        return targetService.monoAop()
-    }
-
-    @GetMapping("/coroutine")
-    suspend fun coroutineAop(): String {
-        return targetService.coroutineAop()
+        return targetService.aop()
     }
 }
